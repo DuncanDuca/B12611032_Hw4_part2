@@ -1,0 +1,39 @@
+{
+    "player": {
+        "gold": 260,
+        "reputation_level": "Apprentice",
+        "days_passed": 3
+    },
+    "inventory": {
+        "ingredients": {
+            "Water": 17,
+            "Basic Herb": 7,
+            "Mystic Petal": 4
+        },
+        "potions": {}
+    },
+    "current_quest": {
+        "name": "藥草採集",
+        "potion_name": "初級恢復藥水",
+        "reward": 50,
+        "missing": {
+            "Basic Herb": 2,
+            "Mystic Petal": 1
+        }
+    },
+    "game_log": [
+        {
+            "task": "Quest_Generation",
+            "user_prompt": "\n    我的聲望等級是 Apprentice。請生成一個新任務。\n    回覆必須是 JSON 格式：{ \"name\": \"...\", \"potion_name\": \"...\", \"reward\": 0 }\n    ",
+            "llm_output": {
+                "name": "Herbalist Apprentice",
+                "potion_name": "Budding Blend",
+                "reward": 20,
+                "missing": {
+                    "Mystic Petal": 2
+                }
+            },
+            "day": 0
+        }
+    ]
+}
